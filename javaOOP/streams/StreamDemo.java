@@ -29,7 +29,9 @@ public class StreamDemo {
         stream.limit(10).forEach(n->System.out.println(n));
     }
     public static  void streamIterate(int seed){
-       Stream.iterate(seed,n->n*3).limit(10).forEach(n->System.out.println(n));
+       var stream=Stream.iterate(seed,n->n*3);
+       stream.limit(10).forEach(n->System.out.println(n));
+       System.out.println(stream);
         // return ;
     }
 }
