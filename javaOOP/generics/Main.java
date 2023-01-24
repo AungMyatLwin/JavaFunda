@@ -1,6 +1,6 @@
 package javaOOP.generics;
 
-import javax.rmi.CORBA.Util;
+// import javax.rmi.CORBA.Util;
 
 import javaOOP.generics.GenericList;
 import javaOOP.generics.User;
