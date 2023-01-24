@@ -1,5 +1,8 @@
 package dsa.linear.Arrays;
 
+import java.util.Arrays;
+import java.util.OptionalInt;
+
 public class ArrayExercise{
     private int count;
     private int [] items;
@@ -38,5 +41,10 @@ public class ArrayExercise{
             }
         }
         return -1;
+        
+    }
+    public void max(){
+        OptionalInt maxItem=Arrays.stream(items).max();
+        System.out.println(maxItem);
     }
 }

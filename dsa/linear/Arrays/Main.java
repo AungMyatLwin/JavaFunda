@@ -18,6 +18,8 @@ public class Main {
         numbers.removeAt(1);
         numbers.print();
         numbers.indexOf(24);
+        numbers.max();
+        
     //    System.out.println("length: "+numbers);
 
     }
