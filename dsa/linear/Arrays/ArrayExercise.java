@@ -11,9 +11,10 @@ public class ArrayExercise{
         items=new int[length];
     }
     public void print(){
-        for(int i=0;i<count;i++){
-            System.out.println(items[i]);
-        }
+        // for(int i=0;i<count;i++){
+        //     System.out.println(items[i]);
+        // }
+        Arrays.stream(items).forEach(t->System.out.println(t));
     }
     public void insert(int item){
         if(items.length==count){
@@ -43,8 +44,9 @@ public class ArrayExercise{
         return -1;
         
     }
-    public void max(){
+    public int max(){
         OptionalInt maxItem=Arrays.stream(items).max();
-        System.out.println(maxItem);
+        System.out.println(maxItem.orElse(0));
+        return maxItem.orElse(0);
     }
 }

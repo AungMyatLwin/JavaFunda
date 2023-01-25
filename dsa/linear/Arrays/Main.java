@@ -16,10 +16,10 @@ public class Main {
 
         
         numbers.removeAt(1);
-        numbers.print();
+        // numbers.print();
         numbers.indexOf(24);
-        numbers.max();
-        
+        var max=numbers.max();
+        System.out.println("max number is: "+max);
     //    System.out.println("length: "+numbers);
 
     }
