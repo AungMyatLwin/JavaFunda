@@ -23,10 +23,16 @@ public class Main {
         // System.out.println(isBalancedString.isBalanced());;
         // stack implementation
         var stack = new Stack();
+        var stack2=new Stack();
         stack.push(1);
+
+        stack2.push(10);
+        stack2.push(2);
         stack.push(2);
         stack.push(3);
         stack.push(3);
+        System.out.println("mini"+ stack.min());
+        System.out.println("stack2"+stack2.peek());
         // stack.push(1);
         var top=stack.pop();
         System.out.println("-----------"+top);
@@ -36,6 +42,7 @@ public class Main {
         System.out.println(stack.pop());
         System.out.println("ff"+stack.peek());
         System.out.println(stack.pop());
+        System.out.println("mini"+ stack.min());
         System.out.println("ff"+stack.peek());
         System.out.println(stack.pop());
         

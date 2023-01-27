@@ -1,4 +1,7 @@
 package dsa.linear.Stacks;
+
+import java.util.Arrays;
+
 // implement stack using arrays;
 public class Stack {
     // with array int[]
@@ -38,6 +41,10 @@ public class Stack {
     }
     public int peek(){
         return arrayStack.length;
+    }
+    public int min(){
+        return Arrays.stream(arrayStack).min().orElseGet(() -> 0);
+        
     }
 
 }
