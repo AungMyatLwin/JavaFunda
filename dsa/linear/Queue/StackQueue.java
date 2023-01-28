@@ -15,14 +15,15 @@ public class StackQueue {
        
     }
     public int deque(){
-        stackTemp=stackInput.lastElement();
-        for(int i=stackInput.size()-1;i>=0;i--){
-           stackExchange.push(stackInput.elementAt(i));
+        if(stackExchange.isEmpty()){
+            while(!stackInput.isEmpty()){
+                stackExchange.push(stackInput.pop());
+            }
         }
-       stackInput=stackExchange;
-      return stackInput.pop();
+        return stackExchange.pop();
     }
-    public String peek(){
-        return stackInput.toString();
+    
+    public Integer peek(){
+        return stackInput.peek();
     }
 }
