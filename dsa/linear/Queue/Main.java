@@ -24,14 +24,22 @@ public class Main {
     //     var i=arrQue.deque();
     //    System.out.println( arrQue.deque());
     //     System.out.println(i);
-     StackQueue stackQueue= new StackQueue();
-     stackQueue.enque(10);
-     stackQueue.enque(20);
-     stackQueue.enque(30);
-     System.out.println(stackQueue.peek());
-     stackQueue.deque();
-     System.out.println(stackQueue.peek());
+    //  StackQueue stackQueue= new StackQueue();
+    //  stackQueue.enque(10);
+    //  stackQueue.enque(20);
+    //  stackQueue.enque(30);
+    //  System.out.println(stackQueue.peek());
+    //  stackQueue.deque();
+    //  System.out.println(stackQueue.peek());
         
+    //  StackQueue.priorityQueue();
+    PriorityQueue pq=new PriorityQueue();
+    pq.insert(4);
+    pq.insert(3);
+    pq.insert(2);
+    pq.insert(4);
+    pq.insert(1);
+
     }
     public static void reverse(Queue<Integer> queue){
         Stack<Integer> stack=new Stack<>();
