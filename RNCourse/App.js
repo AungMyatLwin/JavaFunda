@@ -19,7 +19,7 @@ export default function App() {
   function addGoalHandler(enteredGoalText){
     setCourseGoal(currentCourseGoal=>[...currentCourseGoal,
       {text:enteredGoalText, id:Math.random().toString()}]);
-      closeModalHandler();
+      closeModalHandler(); 
   };
   function deleteGoalHandler(id){
    setCourseGoal(currentCourseGoal=> currentCourseGoal.filter(goal=>goal.id!==id));
